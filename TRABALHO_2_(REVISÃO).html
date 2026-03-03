@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> RESUMO DE ENGENHARIA DE SOFTWARE </title>
+<style>
+nav { background-color: #FFFFFF;
+font-family: "Segoe UI", sans-serif;
+border-radius: 23px;
+}
+nav ul{ list-style:none;
+margin:0;
+padding:0;
+display: flex;
+justify-content:center;
+++} nav ul li{margin:0}
+nav ul li a{
+display:block;
+padding:15px 20px;
+color: #FFFFFF;
+text-decoration: none;
+transition: background-color o.4s/;
+}
+body{
+background-color: #FFFFFF;
+font-family: "Arial", san-serif;
+aling-items:center;
+}
+img{ display:flex;
+size: 20% 50%;
+border-radius: 53px;
+}
+</style>
+</head>
+<body>
+<nav>
+</ul>
+</nav>
+<h1> RESUMO DE ENGENHARIA DE SOFTWARE </h2>
+<br>
+<h2>Conteudos: Diagrama de Classe e Diagrama de caso de uso</h2>
+<br>
+<p1> <strong>DIAGRAMA DE CLASSE:</strong> </p1>
+<br>
+<p2>
+<b>I. Introdução à Orientação a Objetos (OO):</b><br>
+A Orientação a Objetos (OO) é um paradigma de programação que modela o mundo real através de objetos, que são instâncias de classes. O objetivo da OO é criar objetos que interajam entre si, encapsulando dados e comportamentos específicos.
+<br>
+ Princípios da Orientação a Objetos 
+<br>
+
+Encapsulamento: Oculta os detalhes internos de um objeto e expõe apenas o que é necessário.
+<br>
+
+Herança (Generalização/Especialização): Permite que uma classe (subclasse) herde atributos e métodos de outra classe (superclasse). Isso otimiza o tempo de desenvolvimento, diminui linhas de código e facilita manutenções.
+<br>
+
+Polimorfismo: É a capacidade de classes derivadas (subclasses) de uma mesma superclasse chamarem métodos com o mesmo nome (ou assinatura), mas que possuem comportamentos e resultados diferentes em cada subclasse.
+
+<br>
+Abstração: Representação simplificada de conceitos complexos, focando apenas nos aspectos essenciais.
+<br>
+<b>II. Classes e Objetos: </b> <br>
+ Objeto
+Um objeto é qualquer coisa, concreta ou abstrata, que exista física ou conceitualmente no mundo real. Exemplos incluem: cliente, professor, carro.
+
+ Classe
+Uma classe é uma abstração de um conjunto de objetos que possuem o mesmo tipo de características e comportamentos. Servem como um molde para criar objetos, especificando seus atributos e métodos.
+<br>
+A classe é representada por um retângulo dividido em três partes:
+
+<br>
+Nome da Classe.
+
+<br>
+Atributos (Características): Representam as características que variam de objeto para objeto (ex: nome do cliente, cor do carro) e diferenciam um objeto do outro.
+<br>
+
+Métodos (Comportamentos): São processos, serviços ou atividades que uma instância da classe pode executar.
+<br>
+ <b>Visibilidade (Encapsulamento):</b> <br> 
+
+A visibilidade é um símbolo que antecede um atributo ou método para indicar seu nível de acessibilidade:
+<br>
+Símbolo	
+<br>
++	Pública	
+Pode ser utilizado por objetos de qualquer classe.
+<br>
+#	Protegida	
+Apenas objetos da classe ou de suas subclasses podem acessar.
+<br>
+-	Privada	
+Somente os objetos da própria classe podem utilizar.
+<br>
+<b>III. Diagrama de Classes e Relacionamentos</b><br>
+O Diagrama de Classes tem o objetivo de permitir a visualização das classes e como elas se relacionam no sistema, fornecendo uma visão estática de sua estrutura lógica.
+
+<br>
+Relacionamento	Notação e Característica
+<br>
+Associação	
+Conecta duas ou mais classes, demonstrando colaboração entre as instâncias.
+<br>
+Associação Unária/Reflexiva	
+Relacionamento de uma instância de uma classe com instâncias da mesma classe.
+<br>
+Associação Binária	
+Conecta duas classes por meio de uma reta.
+<br>
+Herança (Generalização)	
+Permite o compartilhamento de atributos e métodos entre classes. Representada por uma seta com triângulo vazio apontando para a superclasse.
+<br>
+
+Agregação	
+Uma linha sólida com um diamante vazio na ponta da classe todo-agregado. As duas classes podem "viver" de forma independente (ligação fraca).
+<br>
+
+Composição	
+Uma linha sólida com um diamante preenchido na ponta da classe todo-composta. Objetos da classe parte não podem viver quando o todo é destruído (ligação forte).
+
+<br>
+Classe Associativa	
+Utilizada quando um relacionamento tem multiplicidade de "muitos" (*) em ambas as extremidades. É representada por uma reta tracejada que sai da associação e atinge a classe associativa, que guarda os objetos envolvidos
+<br>
+<b> IV. Multiplicidade </b> 
+<br>
+
+A multiplicidade indica o número de objetos das classes associadas envolvidos no relacionamento.
+<br>
+Multiplicidade	Significado:
+<br>
+0..1	No mínimo zero e no máximo um. Não precisa estar relacionada, mas se estiver, é com apenas uma instância.
+<br>
+1..1	Um e somente um. Apenas um objeto se relaciona.
+<br>
+0..*	No mínimo nenhum e no máximo muitos. Pode ou não haver instâncias participando.
+<br>
+*	Muitos. Muitos objetos envolvidos.
+<br>
+1..*	No mínimo 1 e no máximo muitos. Pelo menos um objeto envolvido, podendo haver muitos.
+<br>
+2..5	No mínimo 2 e no máximo 5. Existe pelo menos 2 instâncias envolvidas, podendo ser 3, 4 ou 5, mas não mais do que isso.</p2>
+<br>
+<br>
+<p3> <strong> DIAGRAMA DE CASO DE USO </strong> </p3>
+<br>
+<p4>
+<b>I. Propósito e Conceitos Fundamentais</b> <br>
+O Diagrama de Caso de Uso é um modelo comportamental (ou dinâmico) que mostra o que o sistema deve fazer, do ponto de vista do usuário, sem se preocupar com como o sistema fará.
+<br>
+Modelagem de Sistemas: É a criação de representações abstratas (diagramas) para visualizar, especificar, construir e documentar a lógica e o comportamento de um software. A modelagem visa o entendimento e a compreensão do sistema.
+<br>
+Requisito Funcional: Um Caso de Uso representa um requisito funcional de alto nível.
+<br>
+<b>II. Elementos Chave do Diagrama</b>
+<br>
+Elemento,Notação,Definição
+<br>
+Ator,(Boneco Palito),"É um papel desempenhado por um usuário, por outro sistema ou por um dispositivo hardware que interage com o sistema em estudo."
+<br>
+Caso de Uso,(Oval/Elipse),Representa uma funcionalidade ou um conjunto de ações que o sistema executa para produzir um resultado de valor para um Ator. Deve ser nomeado usando Verbo + Substantivo (ex: Realizar Inscrição).
+<br>
+Limite do Sistema,(Retângulo),Representa a fronteira do sistema que está sendo modelado. Os Casos de Uso ficam dentro do limite; os Atores ficam fora.
+<br>
+Associação,(Linha Sólida),Indica que um Ator interage (comunica) com um Caso de Uso. Essa associação sempre existe entre um ator e um caso de uso.
+<br>
+<b>III. Relacionamentos entre Casos de Uso:</b><br>
+Os relacionamentos entre Casos de Uso permitem modularizar o sistema, evitar repetição e detalhar comportamentos.
+<br>
+Relacionamento,Notação,Significado,Aplicação
+<br>
+Inclusão,include (Seta tracejada),O Caso de Uso Base obrigatoriamente inclui e utiliza a funcionalidade do Caso de Uso Incluído. O comportamento é reutilizado por múltiplos Casos de Uso.,É usado para refatorar funcionalidades comuns. A seta aponta para o Caso de Uso incluído.
+<br>
+Extensão,extend (Seta tracejada),"O Caso de Uso Estendido opcionalmente adiciona funcionalidade ao Caso de Uso Base, apenas se uma condição for satisfeita.",É usado para modelar funcionalidades secundárias ou fluxos alternativos (ex: tratamento de erro). A seta aponta para o Caso de Uso Base.
+<br>
+Generalização,(Seta com triângulo vazio),"Um Caso de Uso (filho) herda e especializa o comportamento de outro Caso de Uso (pai), podendo sobrescrever ou adicionar novos passos.",É usado para modelar cenários onde um processo genérico é especializado (ex: Realizar Pagamento é um Caso de Uso genérico que pode ser especializado em Pagar com Cartão ou Pagar com Boleto). A seta aponta para o Caso de Uso Pai (Generalista).
+<br>
+
+<b>IV. Descrição Formal de Caso de Uso:</b><br>
+Além do diagrama visual, cada Caso de Uso deve ser complementado por uma descrição textual detalhada que define o fluxo de eventos.
+Campo,Descrição
+Nome do Caso de Uso,Nome claro da funcionalidade (ex: Realizar Inscrição).<br>
+Atores,Quem interage para executar o caso de uso.<br>
+Pré-condições,O que deve ser verdadeiro antes de o caso de uso começar (ex: Aluno está identificado no sistema).<br>
+Fluxo Principal,A sequência normal e esperada de passos (passo a passo de sucesso).
+<br>
+Fluxo Alternativo,"Sequências de passos que podem ocorrer em condições menos comuns, mas que não são erros (ex: Aluno entra em lista de espera)."
+<br>
+Pós-condições,O que deve ser verdadeiro após o caso de uso ser concluído (ex: O Aluno foi inscrito em uma das turmas).
+<br>
+Regras de Negócio (RN),Restrições ou políticas que governam o processo (ex: RN01 – O aluno pode matricular-se no máximo em 6 disciplinas).
+<br>
+
+<b>V. Relacionamento de Generalização de Atores</b>
+<br>
+Conceito: Um Ator pode herdar as associações de outro Ator, representando uma especialização/subtipo.
+<br>
+Exemplo: O Ator Professor Coordenador pode ser uma especialização do Ator Professor. Ele herda todas as interações do Professor e pode ter interações adicionais.
+<br>
+Notação: Uma seta com triângulo vazio é desenhada do Ator Especializado para o Ator Geral.
+</p4>
+<br>
+<p5> <strong> PERGUNTAS DE VERDADEIRO OU FALSO: </strong> </p5>
+<p6> <br>  1 O Diagrama de Caso de Uso é um modelo comportamental que descreve como o sistema será implementado tecnicamente, detalhando algoritmos e estruturas internas. <br>
+<input type="checkbox"> verdadeiro
+<input type="checkbox"> falso
+<br>
+2 No relacionamento include, o Caso de Uso Base obrigatoriamente utiliza a funcionalidade do Caso de Uso incluído, sendo comum para reutilizar comportamentos compartilhados.<br>
+<input type="checkbox"> verdadeiro
+<input type="checkbox"> falso
+<br>3 Na generalização de atores, o ator especializado herda as associações do ator geral, podendo ainda possuir interações adicionais próprias.<br>
+<input type="checkbox"> verdadeiro
+<input type="checkbox"> falso
+<br>
+4 O encapsulamento permite que todos os atributos de uma classe sejam acessados diretamente por qualquer outra classe, facilitando a reutilização de código.
+<br>
+<input type="checkbox"> verdadeiro
+<input type="checkbox"> falso
+<br>
+5 Na herança (generalização), a subclasse herda atributos e métodos da superclasse, podendo reaproveitar comportamentos e reduzir a duplicação de código.<br>
+<input type="checkbox"> verdadeiro
+<input type="checkbox"> falso
+<br>
+6 Na composição, os objetos da classe parte podem existir independentemente do objeto da classe todo, caracterizando uma ligação fraca entre as classes.
+classe<br>
+<input type="checkbox"> verdadeiro
+<input type="checkbox"> falso
+<br>
+<input type="submit" value="Enviar" />
+</body>
+
+
+
+</html>
