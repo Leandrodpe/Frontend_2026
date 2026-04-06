@@ -73,7 +73,7 @@ function atualizarFundo(){
         horas++;
         if (horas>=24) horas=0;
         
-        // Atualiza o estado do toggle visualmente baseado nas horas (opcional)
+   
         toggleClima.checked=(horas>=12);
         
         aplicarFundo();
